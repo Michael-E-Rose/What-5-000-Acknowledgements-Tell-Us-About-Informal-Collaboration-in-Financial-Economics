@@ -1,0 +1,13 @@
+%latex.default(m, file = paste0(out_folder, "Tables/forecast_person.tex"),     center = "none", where = "ht", rowlabel.just = "l", rowlabel = "",     booktabs = T, dcolumns = T, multicol = F, table.env = F)%
+\begin{tabular}{lrrr}
+\toprule
+&Adj. R${^2}$&RMSE&RMSE Differential\tabularnewline
+\midrule
+Benchmark&$0.12$&$1.20$&$$\tabularnewline
+Recent past output&$0.36$&$1.02$&$15.00$\tabularnewline
+Author network variables&$0.29$&$1.08$&$10.00$\tabularnewline
+Commenter network variables&$0.33$&$1.05$&$12.50$\tabularnewline
+Auth. net. and com. net. variables&$0.37$&$1.02$&$15.00$\tabularnewline
+All&$0.41$&$0.98$&$18.33$\tabularnewline
+\bottomrule
+\end{tabular}

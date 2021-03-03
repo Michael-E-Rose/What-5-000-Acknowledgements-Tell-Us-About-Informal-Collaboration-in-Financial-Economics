@@ -1,0 +1,20 @@
+%latex.default(corr_matrix, file = paste0(out_folder, "Tables/corr_person.tex"),     center = "none", table.env = F, booktabs = T, dec = 2, rowlabel.just = "l|",     multicol = F, numeric.dollar = F, dcolumns = T, colheads = F,     where = "ht", rgroup = c("Researcher Characteristics", "Network Centralities"),     n.rgroup = c(length(var$node) - 2, length(var$com) + length(var$auth) -         1))%
+\begin{tabular}{l|rrrrrrrrrrrr}
+\toprule
+{\bfseries Researcher Characteristics}&&&&&&&&&&&&\tabularnewline
+Euclid. Index&&&&&&&&&&&&\tabularnewline
+Publications& 0.81&&&&&&&&&&&\tabularnewline
+Citations& 0.99& 0.87&&&&&&&&&&\tabularnewline
+Female&-0.13&-0.17&-0.14&&&&&&&&&\tabularnewline
+Experience& 0.77& 0.81& 0.80&-0.18&&&&&&&&\tabularnewline
+\midrule
+{\bfseries Network Centralities}&&&&&&&&&&&&\tabularnewline
+No. of Thanks& 0.38& 0.22& 0.37&-0.09& 0.24&&&&&&&\tabularnewline
+Out-Degree& 0.36& 0.20& 0.35&-0.07& 0.23& 0.93&&&&&&\tabularnewline
+Eigenvector centrality rank (informal)& 0.02& 0.04& 0.03& 0.00& 0.14&-0.05&-0.03&&&&&\tabularnewline
+Betweenness centrality rank (informal)&-0.09&-0.10&-0.09& 0.05& 0.02&-0.28&-0.30& 0.64&&&&\tabularnewline
+Degree (co-author)& 0.25& 0.21& 0.26&-0.02& 0.15& 0.20& 0.20&-0.13&-0.20&&&\tabularnewline
+Eigenvector centrality rank (co-author)& 0.00&-0.06&-0.01& 0.06&-0.01&-0.03&-0.02& 0.19& 0.25&-0.12&&\tabularnewline
+Betweenness centrality rank (co-author)&-0.10&-0.17&-0.12& 0.10&-0.06&-0.23&-0.21& 0.43& 0.51&-0.42&0.60&\tabularnewline
+\bottomrule
+\end{tabular}

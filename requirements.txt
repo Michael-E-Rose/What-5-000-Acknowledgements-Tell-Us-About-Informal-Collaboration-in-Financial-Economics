@@ -1,0 +1,11 @@
+Genderize==0.3.1
+matplotlib==2.1.1
+networkx==2.5
+numpy==1.13.3
+num2words==0.5.10
+pandas==1.1.5
+pybliometrics==2.9.1
+scholarmetrics==0.2.1
+scipy==1.5.4
+seaborn==0.11.1
+tqdm==4.56.0

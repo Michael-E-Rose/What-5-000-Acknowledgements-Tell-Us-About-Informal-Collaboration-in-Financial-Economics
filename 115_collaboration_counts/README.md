@@ -1,0 +1,1 @@
+File lists for every person the yearly number of given comments, given discussions and various forms of received informal collaboration as listed on papers published in that year.  Variables ending on `_n` are normalized by the number of authors on that paper.

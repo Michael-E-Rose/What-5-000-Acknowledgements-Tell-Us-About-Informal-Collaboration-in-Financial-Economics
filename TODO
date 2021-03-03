@@ -1,0 +1,22 @@
+# Use the following code in the paper generation to find unmerged titles:
+df = (scopus_df.merge(acks, "outer", left_index=True, right_index=True, indicator=True))
+wrong = df[df["_merge"] != "both"].copy()
+print(wrong._merge.value_counts())
+for c in ["journal", "title", "year"]:
+    wrong[c + "_x"] = wrong[c + "_x"].fillna(wrong[c + "_y"])
+cols = ["eid", "journal_x", "title_x", "year_x", "_merge"]
+wrong[cols].to_csv("inspection.csv", index=False)
+df = df.drop("_merge", axis=1)
+
+Refresh with missing JMCB articles (requested April 16)
+Add correction of page ranges
+Ask sciencedirect to correct the type of: 2-s2.0-0031185104, 2-s2.0-0036110867, 2-s2.0-0036348678, 2-s2.0-0001904894, 2-s2.0-3142706734, 2-s2.0-0040331692
+
+# Use the following code to refresh authors of newly added publications:
+eid = "XXX"
+ab = AbstractRetrieval(eid, view="FULL", refresh=1)
+q = f"SOURCE-ID({ab.source_id}) AND PUBYEAR IS {ab.coverDate[:4]}"
+s = ScopusSearch(q, refresh=1)
+for au in ab.authors:
+    q = f"AU-ID({au.auid})"
+    s = ScopusSearch(q, refresh=1)

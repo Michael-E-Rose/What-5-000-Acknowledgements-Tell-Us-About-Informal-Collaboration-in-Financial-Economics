@@ -1,0 +1,1 @@
+We are not allowed to share Scopus data - execute the corresponding script [`_880_create_person_samples.py`](../_880_create_person_samples.py) to obtain master files for person sample regression and bilateral collaboration analysis.

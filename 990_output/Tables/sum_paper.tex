@@ -1,0 +1,30 @@
+%latex.default(summary_com, file = paste0(out_folder, "Tables/sum_paper.tex"),     center = "none", where = "ht", rowlabel.just = "l", rowlabel = "",     booktabs = T, dcolumns = T, multicol = F, table.env = F)%
+\begin{tabular}{lrrrrrr}
+\toprule
+&N&Mean&Median&Std.Dev.&Min&Max\tabularnewline
+\midrule
+\textbf{Academic success}\\
+Total citation count&$5769$&$ 129.6$&$ 58$&$ 249.63$&$0$&$ 6149$\tabularnewline
+Top publication&$5769$&$   0.6$&$  1$&$   0.50$&$0$&$    1$\tabularnewline
+\midrule\textbf{Paper Characteristics}\\
+\# of pages&$5769$&$  25.9$&$ 25$&$  10.27$&$1$&$   80$\tabularnewline
+\# of authors&$5769$&$   2.1$&$  2$&$   0.84$&$1$&$    6$\tabularnewline
+Auth. total Euclid&$5769$&$ 186.4$&$ 60$&$ 396.58$&$0$&$ 8123$\tabularnewline
+\midrule\textbf{Informal collaboration}\\
+\# of seminars&$5769$&$   3.6$&$  2$&$   4.38$&$0$&$   32$\tabularnewline
+\# of conferences&$5769$&$   1.8$&$  1$&$   1.98$&$0$&$   23$\tabularnewline
+\# of commenters&$5769$&$   8.3$&$  7$&$   6.56$&$0$&$   58$\tabularnewline
+Com. total Euclid&$5769$&$1358.4$&$654$&$1976.98$&$0$&$19459$\tabularnewline
+\midrule\textbf{Authors' centralities}\\
+Auth. giant (co-author)&$5769$&$   0.1$&$  0$&$   0.29$&$0$&$    1$\tabularnewline
+Auth. eigenvector (co-author)&$5769$&$   0.0$&$  0$&$   0.05$&$0$&$    1$\tabularnewline
+Auth. betweenness (co-author)&$5769$&$   0.0$&$  0$&$   0.07$&$0$&$    1$\tabularnewline
+Auth. giant (informal)&$5769$&$   0.7$&$  1$&$   0.47$&$0$&$    1$\tabularnewline
+Auth. eigenvector (informal)&$5769$&$   0.0$&$  0$&$   0.04$&$0$&$    0$\tabularnewline
+Auth. betweenness (informal)&$5769$&$   0.0$&$  0$&$   0.01$&$0$&$    0$\tabularnewline
+\midrule\textbf{Commenters' centralities}\\
+Com. giant (informal)&$5769$&$   0.8$&$  1$&$   0.42$&$0$&$    1$\tabularnewline
+Com. eigenvector (informal)&$5769$&$   0.1$&$  0$&$   0.15$&$0$&$    2$\tabularnewline
+Com. betweenness (informal)&$5769$&$   0.0$&$  0$&$   0.04$&$0$&$    0$\tabularnewline
+\bottomrule
+\end{tabular}

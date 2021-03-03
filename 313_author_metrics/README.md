@@ -1,0 +1,2 @@
+Due to Scopus' policy, we are not allowed to share Scopus data - execute the corresponding script [`_313_get_author_metrics.py`](../_313_get_author_metrics.py) to obtain the follwing file:
+- [`metrics.csv`](metrics.csv) lists the number of yearly recorded citations to all research articles (articles, reviews, in-press articles) of an author by year (of the citing item), the number of new publications, the SJR-weighted publication count and the Euclidean index of citations for that year.

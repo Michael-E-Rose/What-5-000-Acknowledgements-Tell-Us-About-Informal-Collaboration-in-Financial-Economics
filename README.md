@@ -1,5 +1,5 @@
 # What 5,000 Acknowledgements Tell Us About Informal Collaboration in Financial Economics
-Code and some data for Rose, Michael E. and Co-Pierre Georg (2018): [What 5,000 Acknowledgements Tell Us About Informal Collaboration in Financial Economics](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2709107), Max Planck Institute for Innovation & Competition Discussion Paper No. 18-11.
+Code and some data for Rose, Michael E. and Co-Pierre Georg (2021): [What 5,000 Acknowledgements Tell Us About Informal Collaboration in Financial Economics](https://www.sciencedirect.com/science/article/abs/pii/S0048733321000408), Research Policy 50(6).
 
 This repository is intended for replication purposes.  For the Collaboration in Financial Economics (CoFE) dataset, see [here](https://github.com/Michael-E-Rose/CoFE).
 
